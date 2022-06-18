@@ -12,7 +12,13 @@ import java.time.LocalDateTime;
  */
 @Component
 @Slf4j
+
 public class MyMetaObjectHandler implements MetaObjectHandler {
+
+    //@JsonDeserialize(using = LocalDateTimeDeserializer.class)
+    //@JsonSerialize(using = LocalDateTimeSerializer.class)
+    //@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    //private LocalDateTime localDateTime;
     /**
      * 插入时自动填充
      * @param metaObject
